@@ -1,0 +1,72 @@
+/*
+font-family: 'Caveat', cursive;
+
+font-family: 'Josefin Slab', serif;
+
+font-family: 'Julius Sans One', sans-serif; 
+*/ 
+
+/*
+#0FA3B1	Viridian Green
+#D9E5D6	HoneyDew
+#EDDEA4	Medium Champagne
+#F7A072	Light Salmon
+#FF9B42	DeepSaffron
+*/
+
+#myNavba{
+	padding-bottom: 0px;
+}
+#namename{
+	margin-top: 10px;
+    margin-bottom: 5px;
+    color: #D9E5D6;
+    font-family: Josefin Slab;
+}
+
+#m2{
+    color: #EDDEA4;
+    font-family: Caveat;
+    font-size: 20px;
+}
+
+#m3{
+    color: #EDDEA4;
+    font-family: Caveat;
+    font-size: 20px;
+}
+
+
+#m4{
+    font-family: Caveat;
+    font-size: 20px;
+}
+
+#forumMaximus{
+margin-top: 52px;
+border-color: #f4d6cc ; 
+border-style: solid; 
+margin-bottom: 10px;
+}
+
+#forumhead{
+    
+    font-family:Josefin Slab;
+    text-align: center;
+}
+#forumhead p{
+    font-family:Julius Sans One;
+    text-align: center;
+}
+#forum{
+    border-color: #9bc1bc ; 
+    border-style:solid;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    font-family:Julius Sans One;  
+}
+  
+#downmenu{
+    font-family: Josefin Slab;
+    font-size: 16px;
+}

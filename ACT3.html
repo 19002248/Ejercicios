@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/stylus.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab&family=Julius+Sans+One&display=swap" rel="stylesheet">
+<title>Suma de números</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #0FA3B1">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                     
+      </button>
+      <a class="navbar-brand" href="index.html"></a> <h2 id="namename" style="position: relative; display:  inline-block; ">Carpeta de trabajos</h2> 
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="ACT1.html" id="m2">ACT1</a></li>
+        <li><a href="ACT2.html" id="m2">ACT2</a></li>
+        <li><a href="ACT3.html" id="m2">ACT3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<section  style="font-family: Julius Sans One; margin-top: 52px; margin-left: 15px">
+		<h1 style="font-family:Josefin Slab ;background-color:#C83e4d; color:#FFFFFF;  ">Suma de números positivos</h1>
+		<p style="font-family:Julius Sans One; background-color: #ffd275 ">El resultado de a suma se irá mostrando en el cuadro de abajo<br> Para empezar a sumar da click en el botón "Ingresar"</p>
+		<textarea cols="30" rows="5" id="sumaP"></textarea><br>
+	
+	<button onclick="Suma()"> Ingresar </button>
+	</section>
+	<script type="text/javascript"> 
+function Suma() {
+			var x = 1;
+			var sp=0;
+			while(x > 0){
+				var n = prompt("Introduce un número");
+				if (n != "") {
+					if (n > 0) {
+						sp = (Number(sp)+Number(n));
+						document.getElementById("sumaP").innerHTML="Suma total de los números positivos ingresados " +sp;
+						
+					}else{
+						document.getElementById("sumaP").innerHTML="La cantidad final es de "+sp;
+					}
+
+				}else{
+					console.log("error");
+				}
+
+				x = n;
+			}
+		}
+	</script>
+	
+</body>
+</html>

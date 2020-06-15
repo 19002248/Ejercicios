@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Boxes</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/stylus.css" type="text/css"/>
+<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab&family=Julius+Sans+One&display=swap" rel="stylesheet">
+</head>
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #0FA3B1">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                     
+      </button>
+      <a class="navbar-brand" href="index.html"></a> <h2 id="namename" style="position: relative; display:  inline-block; ">Carpeta de trabajos</h2> 
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="ACT1.html" id="m2">ACT1</a></li>
+        <li><a href="ACT2.html" id="m2">ACT2</a></li>
+        <li><a href="ACT3.html" id="m2">ACT3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+	<section style="font-family: Julius Sans One; margin-top: 52px; margin-left: 15px">
+	<h2 style="background-color: #FFD275" >Ejercicio 7_1 </h2><br>
+	<p style="background-color:#7Fd8Be; "> Da clic al botón para introducir el número de cajas</p>
+	<button onclick="ciclo()"> Cajas </button>
+	</section>
+	
+	
+	<script type="text/javascript">
+
+		function ciclo(){
+		var i=1; var Cajas = prompt("Cuántas cajas necesitas?");
+		var b;
+		b=Cajas;
+		while (i<=b) {
+		if(b<=8){
+			document.write('<article id="caja" style="background-color:#10375c; color:#f3c623;height:40px;">Caja_'+i+'</article>');
+			i++;
+			}
+		if(b>8){
+			document.write('<article id="caja" style="background-color:#f3c623; color:#10375c; width:80px; height:40px; display:inline-block;">Caja_'+i+'</article>');
+			i++;
+			}
+		}
+		}
+	</script>
+
+
+</body>
+</html>
