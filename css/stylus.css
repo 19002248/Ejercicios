@@ -79,3 +79,17 @@ margin-bottom: 10px;
     text-align: center;
     margin-bottom: 15px;
 }
+
+#opciones{
+
+}
+
+#comments{
+    resize: none
+}
+
+#botones .btn{
+    color: #001b2e;
+    background-color:#eccbd9;
+    font-family: Quicksand;
+}

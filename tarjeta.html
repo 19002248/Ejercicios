@@ -8,9 +8,23 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="css/stylus.css" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab&family=Julius+Sans+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Delius+Unicase&family=Marck+Script&family=Sail&display=swap" rel="stylesheet"> 
+	<!-- 
+	font-family: 'Charmonman', cursive;
+
+    font-family: 'Delius Unicase', cursive;
+
+    font-family: 'Marck Script', cursive;
+
+    font-family: 'Sail', cursive;
+	-->
 	<title>Tarjeta de felicitación</title>
 </head>
+
+
 <body>
+
+
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 		<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #0FA3B1">
@@ -32,7 +46,130 @@
 </nav>
 <section class="col-sm-12" style="margin-top: 52px;"> <h1>Escoge los elementos que llevará tu tarjeta</h1> </section>
 <section class="col-sm-12">
-	<form class=""></form>
+	<form action="#" method="post" name="tarjeta" style="margin-bottom: 30px" id="opciones">
+      <div class="row">
+
+<div class="col-sm-12 form-group" required>    
+      <label> Elige un tema: </label><br>
+      <div class="col-sm-4"> 
+      		<input type="radio" id="Valentin" name="kind" >
+            <label for="Valentin" style="font-family:Charmonman;font-size:25px;"> San Valentín </label>
+      </div>
+      <div class="col-sm-4">   
+          	<input type="radio" id="Cumple" name="kind" >
+          	<label for="Cumple" style="font-family:Marck Script;font-size:25px;"> Felíz Cumpleaños </label>
+      </div>
+      <div class="col-sm-4">    
+          	<input type="radio" id="Motivation" name="kind" >
+          	<label for="Motivation" style="font-family:Sail;font-size:25px;"> Motivación </label>
+      </div>
+</div>
+
+<div class="col-sm-12 form-group" required>    
+      <label> Elige una imagen: </label><br>
+      <div class="col-sm-4"> 
+      		<input type="radio" id="im1" name="photo" >
+            <label for="im1"> Abrazo </label>
+            <img src="img/hug.jpg" style="width: 90%">
+      </div>
+      <div class="col-sm-4">   
+          	<input type="radio" id="im2" name="photo" >
+          	<label for="im2"> Letrero </label>
+          	<img src="img/Letter.jpg" style="width: 90%;">
+      </div>
+      <div class="col-sm-4">    
+          	<input type="radio" id="im3" name="photo" >
+          	<label for="im3"> Pastel </label>
+          	<img src="img/Bday.jpg" style="width: 90%">
+      </div>
+</div>      
+
+<div class="col-sm-12">
+<div class="col-sm-4 form-group">
+     	<label>Título:</label>
+        <input class="form-control" id="title" name="title" placeholder="Título de la tarjeta" type="text" size="50" required >
+        <label>Subtítulo:</label>
+        <input class="form-control" id="name" name="name" placeholder="Subtítulo" type="text" required size="15">
+        <label>Nombre de la persona que recibirá la tarjeta:</label>
+        <input class="form-control" id="name" name="name" placeholder="Destinatario" type="text" required size="15">
+        <label>Nombre de quien manda la tarjeta:</label>
+        <input class="form-control" id="name" name="name" placeholder="Remitente" type="text"  size="15">
+</div>
+ 
+   
+<div class="col-md-8 form-group">
+		<label>Agrega un texto:</label>
+      	<textarea class="form-control" id="comments" name="comments" placeholder="Añade unas cuantas palabras que quieras comunicar UwU" rows="5" size="100" required></textarea>
+</div>  
+</div>
+
+<div class="col-sm-12" required>
+	<label> Elige un color de fondo	: </label><br>
+      <div class="col-sm-4"> 
+      		<input type="radio" id="im1" name="photo" >
+            <label for="im1" style="background-color:#F9C1B4; color:white; font-size:25px; font-family: Charmonman"> Melon </label>
+      </div>
+      <div class="col-sm-4">   
+          	<input type="radio" id="im2" name="photo" >
+          	<label for="im2" style="background-color:#7B7ECC; color:white; font-size:25px;  font-family: Charmonman"> Violet blue crayola </label>
+      </div>
+      <div class="col-sm-4">    
+          	<input type="radio" id="im3" name="photo" >
+          	<label for="im3" style="background-color:#DBAD6A; color:white; font-size:25px;  font-family: Charmonman"> Earth Yellow </label>
+      </div>
+</div>
+
+<div class="col-sm-12" required>
+	<label> Elige un sonido de fondo: </label><br>
+
+      <div class="col-sm-4"> 
+      	<input type="radio" id="sound1" name="sound" >
+    <label for="im1" style="color:#000029; font-size:25px; font-family: Charmonman">
+    	Tin Spirit
+   	</label><br>
+   	<audio
+        controls
+        src="media/Tin_Spirit.mp3">
+   		</audio>
+      </div>
+
+
+ <div class="col-sm-4"> 
+      	<input type="radio" id="sound1" name="sound" >
+    <label for="im1" style="color:#000029 ; font-size:25px; font-family: Charmonman">
+    	Everglow
+   	</label><br>
+   	<audio
+        controls
+        src="media/Everglow.mp3">
+   		</audio>
+      </div>
+
+
+ <div class="col-sm-4"> 
+      	<input type="radio" id="sound1" name="sound" >
+    <label for="im1" style=" color:#000029; font-size:25px; font-family: Charmonman">
+    	Peaceful Conclusion
+   	</label>
+   	<audio
+        controls
+        src="media/Peaceful_Conclusion.mp3">
+   		</audio>
+      </div>
+</div>
+        
+<div class="col-md-12 form-group" id="botones">
+        <button class="btn pull-right" type="submit" action="#">Crear Tarjeta</button>
+        <button class="btn pull-left" type="reset" value="Borrar"> Borrar </button>
+</div>
+
+</form>
+
+<script type="text/javascript">
+	
+	
+</script>
+
 </section>
 	
 	
