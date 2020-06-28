@@ -10,22 +10,18 @@
 	<link href="https://fonts.googleapis.com/css2?family=Caveat&family=Josefin+Slab&family=Julius+Sans+One&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Charmonman&family=Delius+Unicase&family=Marck+Script&family=Sail&display=swap" rel="stylesheet"> 
 	<!-- 
-	font-family: 'Charmonman', cursive;
+	font-family: 'Charmonman', cursive; valentín
 
     font-family: 'Delius Unicase', cursive;
 
-    font-family: 'Marck Script', cursive;
+    font-family: 'Marck Script', cursive; Cumpleaños
 
-    font-family: 'Sail', cursive;
+    font-family: 'Sail', cursive; Motivación
 	-->
 	<title>Tarjeta de felicitación</title>
 </head>
 
-
-<body>
-
-
-	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
 		<nav class="navbar navbar-default navbar-fixed-top" style="background-color: #0FA3B1">
   <div class="container-fluid">
@@ -44,86 +40,132 @@
     </div>
   </div>
 </nav>
-<section class="col-sm-12" style="margin-top: 52px;"> <h1>Escoge los elementos que llevará tu tarjeta</h1> </section>
+<section class="col-sm-12" style="margin-top: 30px;" id="SupaTaitol"> 
+  <h1>Escoge los elementos que llevará tu tarjeta</h1> 
+</section>
 <section class="col-sm-12">
 	<form action="#" method="post" name="tarjeta" style="margin-bottom: 30px" id="opciones">
-      <div class="row">
 
+<!-- Tema -->
 <div class="col-sm-12 form-group" required>    
       <label> Elige un tema: </label><br>
       <div class="col-sm-4"> 
-      		<input type="radio" id="Valentin" name="kind" >
+      		<input type="radio" id="tema1" name="kind" value="VaL">
             <label for="Valentin" style="font-family:Charmonman;font-size:25px;"> San Valentín </label>
       </div>
       <div class="col-sm-4">   
-          	<input type="radio" id="Cumple" name="kind" >
+          	<input type="radio" id="tema2" name="kind" value="Cum">
           	<label for="Cumple" style="font-family:Marck Script;font-size:25px;"> Felíz Cumpleaños </label>
       </div>
       <div class="col-sm-4">    
-          	<input type="radio" id="Motivation" name="kind" >
+          	<input type="radio" id="tema3" name="kind" value="Mot">
           	<label for="Motivation" style="font-family:Sail;font-size:25px;"> Motivación </label>
       </div>
 </div>
+<!-- fin de Tema -->
 
+<!-- imagen --> 
 <div class="col-sm-12 form-group" required>    
       <label> Elige una imagen: </label><br>
       <div class="col-sm-4"> 
-      		<input type="radio" id="im1" name="photo" >
+      		<input type="radio" id="im1" name="photo" value="Abrazo">
             <label for="im1"> Abrazo </label>
             <img src="img/hug.jpg" style="width: 90%">
       </div>
       <div class="col-sm-4">   
-          	<input type="radio" id="im2" name="photo" >
+          	<input type="radio" id="im2" name="photo" value="Letras">
           	<label for="im2"> Letrero </label>
           	<img src="img/Letter.jpg" style="width: 90%;">
       </div>
       <div class="col-sm-4">    
-          	<input type="radio" id="im3" name="photo" >
+          	<input type="radio" id="im3" name="photo" value="Cake">
           	<label for="im3"> Pastel </label>
           	<img src="img/Bday.jpg" style="width: 90%">
       </div>
 </div>      
+<!-- fin de imagen --> 
 
+<!-- Tipo de borde-->
+<div class="col-sm-12 form-group" required >    
+      <label> Elige un Borde para la imagen: </label><br>
+      <div class="col-sm-4"> 
+          <input type="radio" id="B1" name="borde" value="Polo">
+            <label for="B1" style="font-family: Delius Unicase"> Polaroid </label>
+      </div>
+      <div class="col-sm-4">   
+            <input type="radio" id="B2" name="borde" value="Dots">
+            <label for="B2" style="font-family: Delius Unicase"> Punteado </label>
+      </div>
+      <div class="col-sm-4">    
+            <input type="radio" id="B3" name="borde" value="Dobul">
+            <label for="B3" style="font-family: Delius Unicase"> Doble </label>
+      </div>
+</div>     
+<!-- Fin Tipo de borde-->
+<!-- Color de borde -->
+<div class="col-sm-12 form-group" required>    
+      <label> Elige un color para el Borde de la imagen: </label><br>
+      <div class="col-sm-4"> 
+          <input type="radio" id="C1" name="Cborde" value="Blanco">
+            <label for="C1" style="color:#ffffff;background-color:#293241  ;font-family: Delius Unicase"> Blanco </label>
+      </div>
+      <div class="col-sm-4">   
+            <input type="radio" id="C2" name="Cborde" value="Magic">
+            <label for="C2" style="color:#A1FCDF;background-color: #293241  ; font-family: Delius Unicase"> Magic Mint </label>
+           
+      </div>
+      <div class="col-sm-4">    
+            <input type="radio" id="C3" name="Cborde" value="Mango">
+            <label for="C3" style="color:#F5853F;background-color: #293241  ; font-family: Delius Unicase"> Mango Tango </label>
+          
+      </div>
+</div> 
+<!-- Fin Color de borde -->
+
+<!-- Datos a llenar -->
 <div class="col-sm-12">
 <div class="col-sm-4 form-group">
      	<label>Título:</label>
         <input class="form-control" id="title" name="title" placeholder="Título de la tarjeta" type="text" size="50" required >
         <label>Subtítulo:</label>
-        <input class="form-control" id="name" name="name" placeholder="Subtítulo" type="text" required size="15">
+        <input class="form-control" id="subT" name="subT" placeholder="Subtítulo" type="text" required size="15">
         <label>Nombre de la persona que recibirá la tarjeta:</label>
-        <input class="form-control" id="name" name="name" placeholder="Destinatario" type="text" required size="15">
+        <input class="form-control" id="Reception" name="Reception" placeholder="Destinatario" type="text" required size="15">
         <label>Nombre de quien manda la tarjeta:</label>
-        <input class="form-control" id="name" name="name" placeholder="Remitente" type="text"  size="15">
+        <input class="form-control" id="Sender" name="name" placeholder="Remitente" type="text"  size="15">
 </div>
  
-   
 <div class="col-md-8 form-group">
 		<label>Agrega un texto:</label>
-      	<textarea class="form-control" id="comments" name="comments" placeholder="Añade unas cuantas palabras que quieras comunicar UwU" rows="5" size="100" required></textarea>
+      	<textarea class="form-control" id="Content" name="Content" placeholder="Añade unas cuantas palabras que quieras comunicar UwU" rows="5" size="100" required></textarea>
 </div>  
 </div>
+<!-- Fin Datos a llenar -->
 
+<!-- Color de fondo -->
 <div class="col-sm-12" required>
 	<label> Elige un color de fondo	: </label><br>
       <div class="col-sm-4"> 
-      		<input type="radio" id="color1" name="BckColor" >
+      		<input type="radio" id="color1" name="BckColor" value="F9C1B4" >
             <label for="color1" style="background-color:#F9C1B4; color:white; font-size:25px; font-family: Charmonman"> Melon </label>
       </div>
       <div class="col-sm-4">   
-          	<input type="radio" id="color2" name="BckColor" >
+          	<input type="radio" id="color2" name="BckColor" value="7B7ECC" >
           	<label for="color2" style="background-color:#7B7ECC; color:white; font-size:25px;  font-family: Charmonman"> Violet blue crayola </label>
       </div>
       <div class="col-sm-4">    
-          	<input type="radio" id="color3" name="BckColor" >
+          	<input type="radio" id="color3" name="BckColor" value="DBAD6A" >
           	<label for="color3" style="background-color:#DBAD6A; color:white; font-size:25px;  font-family: Charmonman"> Earth Yellow </label>
       </div>
 </div>
+<!-- fin Color de fondo -->
 
+<!-- sonido de fondo -->
 <div class="col-sm-12" required>
-	<label> Elige un sonido de fondo: </label><br>
+	<label > Elige un sonido de fondo: </label><br>
 
       <div class="col-sm-4"> 
-      	<input type="radio" id="sound1" name="sound" >
+      	<input type="radio" id="sound1" name="sound" value="Spirit" >
     <label for="im1" style="color:#000029; font-size:25px; font-family: Charmonman">
     	Tin Spirit
    	</label><br>
@@ -135,7 +177,7 @@
 
 
  <div class="col-sm-4"> 
-      	<input type="radio" id="sound1" name="sound" >
+      	<input type="radio" id="sound2" name="sound" value="Glow" >
     <label for="im1" style="color:#000029 ; font-size:25px; font-family: Charmonman">
     	Everglow
    	</label><br>
@@ -147,7 +189,7 @@
 
 
  <div class="col-sm-4"> 
-      	<input type="radio" id="sound1" name="sound" >
+      	<input type="radio" id="sound3" name="sound" value="Paz">
     <label for="im1" style=" color:#000029; font-size:25px; font-family: Charmonman">
     	Peaceful Conclusion
    	</label>
@@ -156,22 +198,243 @@
         src="media/Peaceful_Conclusion.mp3">
    		</audio>
       </div>
+</div><br><br>
+<!-- Fin sonido de fondo -->
+
+<!-- vista previa tamaño de texto -->
+<div class="col-sm-12" style="margin-top: 20px; ">
+<label style="font-size: 15px"> Vista previa del tamaño del texto : </label><br>
+<h1 style="font-size: 60px">Título</h1>
+<h3 style="font-size: 25px"> Subtítulo</h3>
+<p style="font-size: 20px"> Destinatario, Remitente y contenido de la tarjeta</p>
+<p style="font-size: 15px">Fecha</p>
+
 </div>
-        
-<div class="col-md-12 form-group" id="botones">
-        <button class="btn pull-right" type="submit" action="#">Crear Tarjeta</button>
+<!-- Fin vista previa tamaño de texto -->
+
+
+<!-- botones -->        
+<div class="col-md-12 form-group" id="botones" style="margin-top: 20px">
+        <button class="btn pull-right" type="submit" onclick="Tarjeton(); return false;">Crear Tarjeta</button>
         <button class="btn pull-left" type="reset" value="Borrar"> Borrar </button>
 </div>
+<!-- find de botones -->        
 
 </form>
+</section>
+
+<!-- Sección que recibirá los datos para darle vida a la tarjeta -->
+<section class="col-sm-12" id="BboxX" style="margin-top: 49px" >
+    <p id="Para" class="pull-left" style="margin-left:15%;font-size: 20px; margin-top: 5px;"></p>
+
+    <h1 id="Taitol" class="col-sm-12" style="text-align: center;font-size: 60px">  </h1>   
+
+    <h3 id="Subtaitol" class="col-sm-12" style="text-align: center;font-size: 25px">  </h3> <br> <br> 
+
+  <figure class="col-sm-12" >  
+    <img id="fotico"  style="width: 60%; margin-left: 20%">
+  </figure>
+
+  <p id="contentt" class="col-sm-8" style="text-align: center; margin-left: 17% ; margin-top: 2%; font-size: 20px;"> </p><br>
+
+<p id="fecha" class="pull-left" style="margin-left:13%; font-size: 15px"></p>
+
+<p id="autor" class="pull-right" style="margin-right: 13%;font-size: 20px"></p>
+<audio><source id="BSaund" ></audio>
+ 
+
+  </section>
+<!-- Fin de la sección que recibirá los datos para darle vida a la tarjeta -->
 
 <script type="text/javascript">
-	
-	
-</script>
+	 function Tarjeton(){
+//Los datos proporcionados los ponemos dentro de variables para 
+//facilitar el redireccionamiento de los mismos.
+//primero van los datos "sencillos"
+    var Destiny=document.getElementById("Reception").value;
+    var Tittle=document.getElementById("title").value;
+    var Subtittle=document.getElementById("subT").value;
+    var Relleno=document.getElementById("Content").value;
+    var Fecha = Date();
+    var Start=document.getElementById("Sender").value;
 
-</section>
-	
-	
+
+//ahora seguimos con los datos de los selectores
+//aquí seleccionamos la tipografía
+    var tema = "";
+    if (document.getElementById('tema1').checked) {
+        tema = document.getElementById('tema1').value;
+    }else if(document.getElementById('tema2').checked){
+        tema = document.getElementById('tema2').value;
+    }else if(document.getElementById('tema3').checked){
+        tema = document.getElementById('tema3').value;
+    }else{
+        alert("seleccione un boton");
+    }
+
+//El color de fondo
+    var BColor = "";
+    if (document.getElementById('color1').checked) {
+        BColor = document.getElementById('color1').value;
+    }else if(document.getElementById('color2').checked){
+        BColor = document.getElementById('color2').value;
+    }else if(document.getElementById('color3').checked){
+        BColor = document.getElementById('color3').value;
+    }else{
+        alert("seleccione un boton");
+    }
+
+//la imagen que acompaña la tarjeta
+    var Imash = "";
+    if (document.getElementById('im1').checked) {
+        Imash = document.getElementById('im1').value;
+    }else if(document.getElementById('im2').checked){
+        Imash = document.getElementById('im2').value;
+    }else if(document.getElementById('im3').checked){
+        Imash = document.getElementById('im3').value;
+    }else{
+        alert("seleccione un boton");
+    }
+
+//el borde de la imagen
+    var BImash = "";
+    if (document.getElementById('B1').checked) {
+        BImash = document.getElementById('B1').value;
+    }else if(document.getElementById('B2').checked){
+        BImash = document.getElementById('B2').value;
+    }else if(document.getElementById('B3').checked){
+        BImash = document.getElementById('B3').value;
+    }else{
+        alert("seleccione un boton");
+    }
+
+//el color del borde de la imagen
+    var CBImash = "";
+    if (document.getElementById('C1').checked) {
+        CBImash = document.getElementById('C1').value;
+    }else if(document.getElementById('C2').checked){
+        CBImash = document.getElementById('C2').value;
+    }else if(document.getElementById('C3').checked){
+        CBImash = document.getElementById('C3').value;
+    }else{
+        alert("seleccione un boton");
+    }
+
+//el sonido que se escuchará de fondo
+    var Saund = "";
+    if (document.getElementById('sound1').checked) {
+        Saund = document.getElementById('sound1').value;
+    }else if(document.getElementById('sound2').checked){
+        Saund = document.getElementById('sound2').value;
+    }else if(document.getElementById('sound3').checked){
+        Saund = document.getElementById('sound3').value;
+    }else{
+        alert("seleccione un boton");
+    }
+//comprobamos que si recibimos los datos 
+console.log(Destiny);
+console.log(Tittle);
+console.log(Subtittle);
+console.log(Relleno);
+console.log(Start);
+console.log(tema);
+console.log(BColor);
+console.log(Saund);
+console.log(Imash);
+console.log(BImash);
+console.log(CBImash);
+//desaparecemos el formulario B) 
+//así la tarjeta puede ocupar la página completa.
+document.getElementById("opciones").style.display = "none";
+document.getElementById("SupaTaitol").style.display = "none";
+
+//empezamos a evaluar nuevamente todas las variables
+//para llamar cada parte del html de la tarjeta y así
+//agregarle el css deseado.
+
+//aunque primero añadimos los datos sesichos UwU
+document.getElementById("Para").innerHTML= "Para: "+ Destiny;
+document.getElementById("Taitol").innerHTML= Tittle;
+document.getElementById("Subtaitol").innerHTML=Subtittle;
+document.getElementById("contentt").innerHTML=Relleno;
+document.getElementById("fecha").innerHTML=Fecha;
+document.getElementById("autor").innerHTML="Con cariño: "+Start;
+
+//ahora arreglamos lo que es de elección múltiple
+//Primero el estilo de letra, el cual se escoge con el tema
+if (tema == "VaL"){
+  document.getElementById("BboxX").style.fontFamily = "Charmonman";
+}
+else if (tema == "Cum"){
+  document.getElementById("BboxX").style.fontFamily = "Marck Script";
+}
+else if (tema == "Mot"){
+  document.getElementById("BboxX").style.fontFamily = "Sail";
+}
+
+// Ahora el color de fondo
+if (BColor == "F9C1B4"){
+  document.getElementById("BboxX").style.backgroundColor = "#F9C1B4";
+}
+else if (BColor == "7B7ECC"){
+  document.getElementById("BboxX").style.backgroundColor = "#7B7ECC";
+  document.getElementById("BboxX").style.color="#ECEBE4"
+}
+else if (BColor == "DBAD6A"){
+  document.getElementById("BboxX").style.backgroundColor = "#DBAD6A";
+  document.getElementById("BboxX").style.color="#ECEBE4"
+}
+
+// Ahora la imagen que escogió el usuario
+if (Imash == "Abrazo"){
+  document.getElementById("fotico").src="img/hug.jpg";
+}
+else if (Imash == "Letras"){
+  document.getElementById("fotico").src="img/Letter.jpg";
+}
+else if (Imash == "Cake"){
+  document.getElementById("fotico").src="img/Bday.jpg";
+}
+
+//el tipo de borde
+if (BImash == "Polo"){
+  document.getElementById("fotico").style.borderTop = "20px solid";
+  document.getElementById("fotico").style.borderLeft = "20px solid";
+  document.getElementById("fotico").style.borderRight = "20px solid";
+  document.getElementById("fotico").style.borderBottom = "60px solid";
+}
+else if (BImash == "Dots"){
+  document.getElementById("fotico").style.border = "10px dotted";
+}
+else if (BImash == "Dobul"){
+  document.getElementById("fotico").style.border = "10px double";
+}
+
+//el color del borde
+if (CBImash == "Blanco"){
+  document.getElementById("fotico").style.borderColor = "#ffffff";
+}
+else if (CBImash == "Magic"){
+  document.getElementById("fotico").style.borderColor = "#A1FCDF";
+}
+else if (CBImash == "Mango"){
+  document.getElementById("fotico").style.borderColor = "#F5853F";
+}
+
+//por último, el audio del usuario
+//En ciertos navegadores es necesario activar permisos para poder 
+//escuchar el audio.
+if (Saund == "Spirit") {
+  document.getElementById("BSaund").innerHTML='<audio src="media/Tin_Spirit.mp3" autoplay loop>'+'</audio>';
+}
+else if (Saund == "Glow"){
+  document.getElementById("BSaund").innerHTML='<audio src="media/Everglow.mp3" autoplay loop>'+'</audio>';
+}
+else if (Saund == "Paz") { 
+  document.getElementById("BSaund").innerHTML='<audio src="media/Peaceful_Conclusion.mp3" autoplay loop>'+'</audio>';
+ }
+
+}
+</script>
 </body>
 </html>
